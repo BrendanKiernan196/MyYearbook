@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Yearbook</string>
+    <string name="todo">TODO</string>
+    <string name="textview">My Yearbook</string>
+    <string name="nameview">Brendan Kiernan</string>
+    <string name="descview">I build things that work on occasion.</string>
+</resources>
