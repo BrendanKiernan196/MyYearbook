@@ -1,5 +1,6 @@
 package com.example.bkiernan.myyearbook;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); //XSS shouldn't be an issue given the hard-coded URL
+    }
+
+    public void loadSideActivity(View view) {
+        Intent sideActIntent = new Intent(this, SideActivity.class);
+        startActivity(sideActIntent);
     }
 
     public void loadWebView(View view) {
